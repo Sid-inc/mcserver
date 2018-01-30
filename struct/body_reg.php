@@ -26,7 +26,7 @@ if(!empty($_SESSION)){
     </div> -->
 
 <div class="reg">
-	<form action="index.php?loc=go" method="post" id="formauth"><br />
+	<form action="../index.php?loc=go" method="post" id="formauth"><br />
 	<p id="login">Вход</p>
 	Введите логин: <br />
 	<input type="text" id="logi" name="login" maxlength="12"/><br /><br />
@@ -35,7 +35,7 @@ if(!empty($_SESSION)){
 	<input type="submit" class="reg-link" name="pass" value="Авторизация" id="auth">
 	<div id="hid_auth"></div>
 	</form>
-	<form class="auth_form reg_link" method="post" action="index.php?loc=reg&form=new">
+	<form class="auth_form reg_link" method="post" action="../index.php?loc=reg&form=new">
 	<input type="submit" value="Регистрация" class="bth">
 	</form>
 	
