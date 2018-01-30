@@ -1,8 +1,8 @@
 <?php
 
 define('SERVER', 'localhost');
-define('USER', 'sveta');
-define('PASS', '123');
+define('USER', 'mcsrv');
+define('PASS', '159357');
 define('DB', 'minecraft');
 
 function db_connect(){
