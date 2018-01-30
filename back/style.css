@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+}
+
+.article {
+    magrin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.admin_table{
+    width:100%;
+}
+
+.form-item{
+    width:700px;
+}

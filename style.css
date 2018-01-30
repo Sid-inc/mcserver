@@ -1,0 +1,435 @@
+.menu {
+ margin-bottom: 5px;
+ width: 900px;
+ height: 150px;
+ border: 2px solid green;
+ margin: auto;
+}
+
+.punkt_menu {
+ width: 25%;
+ float: left;
+ height: 100%;
+ border: 1px solid black;
+ background-color: green;
+}
+
+/*.content {
+ background-color: aqua;
+ border: 1px solid black;
+ min-height: 450px;
+ width: 900px;
+ margin: auto;
+}*/
+
+.footer {
+    margin-top: 3px;
+    background-color: blue;
+    text-align:center;
+    border: 2px solid blue;
+    width: 900px;
+    margin: auto;
+}
+
+body {
+    background-image: url(img/back.jpg);
+    min-height: 500px;
+    border: 2px solid red;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+/** Поворот кнопок **/
+.ch-item {
+	width: 25%;
+    float: left;
+	height: 100%;
+	position: relative;
+	-webkit-perspective: 900px;
+	-moz-perspective: 900px;
+	-o-perspective: 900px;
+	-ms-perspective: 900px;
+	perspective: 900px;
+}
+.ch-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.ch-info .ch-info-front {
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.ch-info .ch-info-back {
+	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	background-image: url(img/btn_top.jpg);
+	opacity: 0;
+}
+
+.ch-img-1 { 
+	background-image: url(img/btn_front_1.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(img/btn_front_2.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(img/btn_front_3.jpg);
+}
+.ch-img-4 { 
+	background-image: url(img/btn_front_4.jpg);
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin: 0 15px;
+	padding: 60px 0 0 0;
+	height: 110px;
+	font-family: Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: translate3d(0,150px,0) rotate3d(1,0,0,-90deg);
+	-moz-transform: translate3d(0,150px,0) rotate3d(1,0,0,-90deg);
+	-o-transform: translate3d(0,150px,0) rotate3d(1,0,0,-90deg);
+	-ms-transform: translate3d(0,150px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,150px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.ch-item:hover .ch-info-back {
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+
+/*------------------С моего сайта-----------------------------*/
+body {background: url("../img/redak1.jpg") no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    position: relative; /* Чтобы футер прикреплялся к низу контента, а не к низу экрана */
+    padding: 0;
+    overflow-x: hidden;
+}﻿
+
+html{
+  margin: 0;
+  padding: 0; 
+}
+
+.hhh {
+   background: linear-gradient(to top, black, green);
+   /*border: 1px solid black;
+      width: 100%;
+   */
+   padding: 1px;
+}
+
+.logo1{
+  text-align: center;
+  background: url("../img/logo.png") center center no-repeat;
+  background-size: contain; /*уменьшение лого*/
+  height: 80px;
+  /*margin: 20px;*/
+  text-indent: -10000px;
+}
+
+/* Меню */
+.nav{
+    font-family: calibri, sans-serif; 
+    font-weight: normal;
+    background: linear-gradient(to top, green, black); 
+    text-align: center;
+    padding-top: 0; 
+    padding-bottom: 0; 
+    padding-left: 0;
+	  width: 100%;
+    margin-top: 0;
+}
+
+li /*текущая страница*/
+{  
+   text-align: center;
+   display: inline-block; 
+   width: 16.79%;
+   margin-right:-0.3em;
+   white-space: nowrap;
+   height:36px;
+   line-height:36px;
+   border: 1px solid black;
+   box-sizing:border-box;
+}
+
+li a{
+  display: block;
+     text-align: center; /* Выравнивание по центру */
+     color: #98FB98; /* Цвет ссылки */
+}
+
+li:hover{
+  background: linear-gradient(to top, #7FFF00, black);
+}
+
+/*доработать*/
+.lon /*текущая страница*/
+{ 
+   /*font-family: calibri, sans-serif; 
+   font-weight: normal;
+   display:table-cell; 
+   background:green; 
+   padding:.5em; 
+   text-align:center; 
+   border:2px solid black; 
+   background: green; /* Для старых браузров 
+   background: linear-gradient(to top, #7FFF00, black);
+   padding: 10px;
+   border: 1px solid black;
+   width:1%;
+   white-space: nowrap;*/
+   background: linear-gradient(to top, #7FFF00, black);
+}
+
+h1 {text-align:center;
+color: yellow;
+font-family: calibri, sans-serif; 
+font-weight: bold;}
+
+.news /* Новостной блок*/ 
+{
+    
+    font-family: calibri, sans-serif; 
+    color: white;
+    width: 50%;
+    margin: 0 23%;
+    background-color: black;
+    border:7px  ridge green;
+    display: block;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    
+}
+
+.news p{
+    text-indent: 3%;
+}
+
+.screenshot{
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 5%;
+padding-right: 2%;
+width: 90%;
+height: 40%;
+z-index: 2;
+}
+
+.content
+{
+    margin: 10px 0px;
+    background-color:#FFF;
+    border: 1px solid; 
+
+}
+
+.logo {
+  border: 0px;
+  margin: 15% 0 0 auto;
+}
+
+
+a {color:  #98FB98; text-decoration:none;}
+
+.box1 {
+margin-top: 1%;
+margin-left: 3%;
+width:14%;
+height:44%;
+border:7px ridge green;
+background-color:black;
+float:left;
+position: absolute; top: 20%;}
+
+.box2
+{
+    cursor: pointer;
+    display: block; 
+    padding: 10px 10px 15px 10px;
+    color: yellow;
+    font-family: calibri, sans-serif; 
+    font-weight: normal;
+    width: 20%; 
+    min-width: 100px;
+    max-width: 300px;
+    background-color: black;
+    border:7px  ridge green;
+    position: absolute;
+    z-index: 99;
+}
+
+.box3
+{
+    text-align: center;
+    cursor: pointer;
+    display: block; 
+    padding: 10px 10px 15px 10px;
+    color: yellow;
+    font-family: calibri, sans-serif; 
+    font-weight: normal;
+    width: 20%; 
+    min-width: 100px;
+    max-width: 300px;
+    background-color: black;
+    border:7px  ridge green;
+    position: absolute;
+    margin-left: 75%;
+    z-index: 99;
+}
+
+/*Регистрация*/
+.reg{
+    font-family: calibri, sans-serif; 
+    color: white;
+    width: 40%;
+    margin: 0 29%;
+    background-color: black;
+    border:7px  ridge green;
+    display: block;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 20%;
+}
+
+.reg input{
+    color: black;
+}
+
+.reg-link{
+    display: inline-block; /* Строчно-блочный элемент */
+    padding: 5px 10px; /* Добавляем поля */
+    margin: 10px; 
+    text-decoration: none; /* Убираем подчёркивание у ссылки */
+    cursor: pointer; /* Курсор в виде руки */
+    font: 12px/1 Arial, sans-serif; /* Рубленый шрифт */
+   }
+
+/*Футер*/
+footer{
+width: 100%;
+background: linear-gradient(to top, black, green);
+margin-left: 0;
+clear:both; /*начинается с чистого места с обеих сторон*/
+text-align: left;
+}
+
+footer p{
+  text-align: center;
+  font-size: 16px;
+  color: yellow;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.tex {position: relative;
+top: 300px;}
+
+.accent{
+    color: yellow; 
+    font-size: 17px;
+}
+
+/*Заголовок регистрации*/
+#login {
+    text-align: center;
+    font-family: sans-serif; 
+    font-weight: bold; 
+    color: yellow;
+    font-size: 20px;  
+    }
+
+/*Информация по регистрации*/
+#success{
+  font-size: 17px;
+}
+
+#regstyle{
+  width: 150px; 
+  height: 40px;
+}
+
+/*div .instruction {font-size: 13px; color: #98FB98;}*/
+
+
