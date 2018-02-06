@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Admin Panel"
-AuthUserFile /var/www/wp.ru/admin/.htpasswd
-Require valid-user
