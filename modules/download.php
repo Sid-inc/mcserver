@@ -9,8 +9,6 @@
 	$dwnloadlink = str_replace("/tree/", "/", $srclink);
 	if(!stristr($srclink,'tree')){				// Если в ссылке нет tree значит мы в корне
 	    $convurl = str_replace("/blob/", "/", $srclink); // Убираем из ссылки на репозиторий /blob/
-	    $folderurl = str_replace("/blob/", "/tree/", $srclink); // Делаем шаблон ссылки на папки
-	    $src = $convurl;					// Записываем ссылку с master на случай если мы в корневом каталоге
 	    $dwnloadlink = $convurl;	
 	    $convurl = str_replace("/master", "", $convurl);	// Значит убираем master из ссылки для загрузки страницы парса	    
 	    $filelink = $srclink;
@@ -24,6 +22,7 @@
 	foreach($links as $lin){		// Перебираем полученные ссылки
 	    $filename=pathinfo($lin->href);	// Выделяем из них только имена файлов
     	    file_put_contents($dstlink.$filename['basename'], file_get_contents($downloadurl.$filename['basename'])); // Качаем файлы
+	    chmod($dstlink.$filename['basename'], 0755);
 	};
 	$html->clear(); // Подчищаем за собой
 	unset($html);
@@ -39,7 +38,6 @@
 	if(!stristr($srclink,'tree')){				// Если в ссылке нет tree значит мы в корне
 	    $convurl = str_replace("/blob/", "/", $srclink); // Убираем из ссылки на репозиторий /blob/
 	    $folderurl = str_replace("/blob/", "/tree/", $srclink); // Делаем шаблон ссылки на папки
-	    $src = $convurl;					// Записываем ссылку с master на случай если мы в корневом каталоге
 	    $dwnloadlink = $convurl;	
 	    $convurl = str_replace("/master", "", $convurl);	// Значит убираем master из ссылки для загрузки страницы парса	    
 	    $filelink = $srclink;
@@ -68,8 +66,49 @@
     get_git($url,$downloadpath);
     get_folders($url,$downloadpath);
 
+    $mvsrcfolder = dirname(__FILE__);
+    $mvdstfolder = "update_backup";
+    $mvupfolders = "downloads";
 
-
+    function mvfiles($srcfolder, $dstfolder){
+	$nomv = array(
+	"1" => ".",
+	"2" => "..",
+	"3" => "mcmap",
+	"4" => ".cache",
+	"5" => ".config",
+	"6" => ".local",
+	"7" => "back",
+	"8" => "downloads",
+	"9" => ".bash_history",
+	"10" => ".htaccess",
+	"11" => "update_backup",
+	"12" => "download.php",
+	"13" => "simple_html_dom.php"
+        );
+	if(is_dir($srcfolder)){
+	    @mkdir($dstfolder);
+	    $d = dir($srcfolder);
+	    while (false !== ($entry = $d->read())){
+		if(array_search($entry, $nomv)<>"") continue;
+		mvfiles("$srcfolder/$entry","$dstfolder/$entry");
+	    }
+	    $d->close();
+	}else{
+	    copy($srcfolder, $dstfolder);
+	    unlink($srcfolder);
+	    echo $srcfolder;
+	    echo "<br>";
+	    echo $dstfolder;
+	    echo "<br>";
+	    
+	    chmod($dstfolder, 0755);
+	}
+	
+    }
+    
+    mvfiles($mvsrcfolder, $mvdstfolder);
+    mvfiles($mvupfolders, $mvsrcfolder);
 
 
 
