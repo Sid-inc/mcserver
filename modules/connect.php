@@ -3,7 +3,7 @@
 define('SERVER', 'localhost');
 define('USER', 'mcsrv');
 define('PASS', '159357');
-define('DB', 'minecraft');
+define('DB', 'mcserver');
 
 function db_connect(){
     $link = mysqli_connect(SERVER, USER, PASS, DB) or die("Error: ".mysqli_error($link));
