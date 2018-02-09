@@ -48,4 +48,24 @@
 			</div>
 		</div>
         </a>
+        <a href="index.php?loc=reg">
+        <div class="ch-item">				
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-4"></div>
+				<div class="ch-info-back">
+					<h3>В разработке</h3>
+				</div>	
+			</div>
+		</div>
+        </a>
+        <a href="index.php?loc=reg">
+        <div class="ch-item">				
+			<div class="ch-info">
+				<div class="ch-info-front ch-img-4"></div>
+				<div class="ch-info-back">
+					<h3>В разрабокте</h3>
+				</div>	
+			</div>
+		</div>
+        </a>
     </div>

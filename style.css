@@ -1,26 +1,13 @@
 .menu {
- margin-bottom: 5px;
- width: 900px;
+ 
+ width: 100%;
  height: 130px;
  border: 2px solid green;
  margin: auto;
+ list-style:none;
+ position: relative;
+/* left:20%;*/
 }
-
-.punkt_menu {
- width: 25%;
- float: left;
- height: 100%;
- border: 1px solid black;
- background-color: green;
-}
-
-/*.content {
- background-color: aqua;
- border: 1px solid black;
- min-height: 450px;
- width: 900px;
- margin: auto;
-}*/
 
 .footer {
     margin-top: 3px;
@@ -33,16 +20,19 @@
 
 /** Поворот кнопок **/
 .ch-item {
-	width: 25%;
-    float: left;
+  display: inline-block;
+	width: 10%;
+  float: left;
 	height: 100%;
-	position: relative;
 	-webkit-perspective: 900px;
 	-moz-perspective: 900px;
 	-o-perspective: 900px;
 	-ms-perspective: 900px;
 	perspective: 900px;
+  position:relative;
+
 }
+
 .ch-info{
 	position: absolute;
 	width: 100%;
@@ -102,12 +92,12 @@
 
 .ch-info h3 {
 	color: #fff;
+  text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 24px;
-	margin: 0 15px;
-	padding: 60px 0 0 0;
-	height: 110px;
+	padding: 14%;
+	height: 100%;
 	font-family: Arial, sans-serif;
 	text-shadow: 
 		0 0 1px #fff, 
