@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 
 /**
- * @author Sid
+ * @author Sid 
  * @copyright 2017
  */
 require_once("modules/connect.php"); // Модуль подключения к базе
