@@ -1,12 +1,4 @@
 <body>
-<!-- <ul class="nav">
-<li><a href="/index.php" style="display:block;">Главная</a></li>
-<li><a href="/reg.php">Регистрация</a></li>
-<li><a href="/kak_podkl.php">Как подключиться</a></li>
-<li><a href="mcmap/index.html">Карта мира</a></li>
-<li><a href="/index.php">Личный кабинет</a></li>
-<li><a href="/o_has.php">О нас</a></li>
-</ul> -->
      <div class="menu">
         <a href="index.php?loc=main">
         <div class="ch-item">				
@@ -51,7 +43,7 @@
         <a href="index.php?loc=reg">
         <div class="ch-item">				
 			<div class="ch-info">
-				<div class="ch-info-front ch-img-4"></div>
+				<div class="ch-info-front ch-img-5"></div>
 				<div class="ch-info-back">
 					<h3>В разработке</h3>
 				</div>	
@@ -61,9 +53,9 @@
         <a href="index.php?loc=reg">
         <div class="ch-item">				
 			<div class="ch-info">
-				<div class="ch-info-front ch-img-4"></div>
+				<div class="ch-info-front ch-img-5"></div>
 				<div class="ch-info-back">
-					<h3>В разрабокте</h3>
+					<h3>В разработке</h3>
 				</div>	
 			</div>
 		</div>
