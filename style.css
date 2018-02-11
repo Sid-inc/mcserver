@@ -6,18 +6,17 @@
 .menu {
  width: 100%;
  height: 130px;
-/*border: 2px solid green;*/
+border: 2px solid green;
 /*Пока убираем рамку как меню имеет лишнее пространство справа*/
  margin: 0;
  list-style:none;
  position: relative;
- left: 5%;
 }
 
 /** Поворот кнопок **/
 .ch-item {
   display: inline;
-	width: 15%;
+	width: 16.667%;
   float: left;
 	height: 100%;
 	-webkit-perspective: 900px;
@@ -66,7 +65,7 @@
 	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
-	background-image: url(img/btn_top.jpg);
+	background-image: url(img/top.png);
 	opacity: 0;
 }
 
