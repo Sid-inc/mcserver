@@ -1,27 +1,23 @@
+@font-face {
+    font-family: System; /* Имя шрифта */
+    src: url(System.ttf); /* Путь к файлу со шрифтом */
+   }
+
 .menu {
- 
  width: 100%;
  height: 130px;
- border: 2px solid green;
- margin: auto;
+/*border: 2px solid green;*/
+/*Пока убираем рамку как меню имеет лишнее пространство справа*/
+ margin: 0;
  list-style:none;
  position: relative;
-/* left:20%;*/
-}
-
-.footer {
-    margin-top: 3px;
-    background-color: blue;
-    text-align:center;
-    border: 2px solid blue;
-    width: 900px;
-    margin: auto;
+ left: 5%;
 }
 
 /** Поворот кнопок **/
 .ch-item {
-  display: inline-block;
-	width: 10%;
+  display: inline;
+	width: 15%;
   float: left;
 	height: 100%;
 	-webkit-perspective: 900px;
@@ -30,7 +26,6 @@
 	-ms-perspective: 900px;
 	perspective: 900px;
   position:relative;
-
 }
 
 .ch-info{
@@ -90,45 +85,20 @@
 	background-image: url(img/face_reg.png);
 }
 
+.ch-img-5 { 
+  background-image: url(img/dev_icon.png);
+}
+
 .ch-info h3 {
 	color: #fff;
   text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 24px;
-	padding: 14%;
+	font-size: 20px;
+	padding: 15% 10%;
 	height: 100%;
-	font-family: Arial, sans-serif;
-	text-shadow: 
-		0 0 1px #fff, 
-		0 1px 2px rgba(0,0,0,0.3);
-}
-
-.ch-info p {
-	color: #fff;
-	padding: 10px 5px;
-	font-style: italic;
-	margin: 0 30px;
-	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
-}
-
-.ch-info p a {
-	display: block;
-	color: #fff;
-	color: rgba(255,255,255,0.7);
-	font-style: normal;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 9px;
-	letter-spacing: 1px;
-	padding-top: 4px;
-	font-family: Arial, sans-serif;
-}
-
-.ch-info p a:hover {
-	color: #fff222;
-	color: rgba(255,242,34, 0.8);
+	font-family: System;
+	text-shadow: 1px 1px 5px black, 0 0 10px #096315;
 }
 
 .ch-item:hover .ch-info-front {
@@ -160,11 +130,11 @@ body {background: url("img/second.png") no-repeat;
     padding: 0;
     overflow-x: hidden;
 }﻿
-
+/*
 html{
   margin: 0;
   padding: 0; 
-}
+}*/
 
 .hhh {
    background: linear-gradient(to top, black, green);
@@ -249,7 +219,7 @@ font-weight: bold;}
     font-family: calibri, sans-serif; 
     color: white;
     width: 50%;
-    margin: 0 23%;
+    margin: 1% 23%;
     background-color: black;
     border:7px  ridge green;
     display: block;
@@ -341,7 +311,7 @@ position: absolute; top: 20%;}
     font-family: calibri, sans-serif; 
     color: white;
     width: 40%;
-    margin: 0 29%;
+    margin: 1% 29%;
     background-color: black;
     border:7px  ridge green;
     display: block;
